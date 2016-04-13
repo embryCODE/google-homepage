@@ -1,3 +1,13 @@
+/*** ISSUES ***
+
+The grid and notifications icons are unfinished. The grid should be gray and turn dark on hover. The notifications icon graphics are very poorly designed. I couldn't figure out the best way to do it.
+
+The positioning of the two submit buttons below the form go outside of the containing div. They look right, but I think there must be a better way to position those two buttons.
+	
+*/
+
+
+
 /*** GENERAL ***/
 
 html {
@@ -10,8 +20,6 @@ body {
 	height: 100%;
 	font-family: arial, sans-serif;
 	font-size: 13px;
-
-/* 	padding-bottom: 40px; */
 }
 
 #container {
@@ -40,8 +48,9 @@ a:hover {
 
 header {
 	overflow: auto;
-	padding-top: 15px;
-	
+	padding-top: 15px;	
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 nav ul {
@@ -88,7 +97,7 @@ nav li:last-child {
 	background-color: black;
 }
 
-#headshot {
+#headshot img {
 	border-radius: 100%;
 }
 
@@ -97,13 +106,15 @@ nav li:last-child {
 /*** MAIN SECTION ***/
 
 #main {
-	padding: 95px 0 208px 0;
+	padding: 165px 0 316px 0;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #google-icon {
-	width: 400px;
+	width: 270px;
 	margin: 0 auto;
-	padding: 70px 0 35px 108px;
+
 }
 
 #search-box-container {
@@ -137,7 +148,6 @@ nav li:last-child {
 	color: #757575;
 	font-weight: bold;
 	font-size: 13px;
-	
 }
 
 #search-button {
@@ -162,6 +172,11 @@ footer {
 	width: 100%;
 	height: 40px;
 	color: #666;
+}
+
+#footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 footer ul {
